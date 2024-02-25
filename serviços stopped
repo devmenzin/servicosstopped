@@ -1,0 +1,15 @@
+# Ativar o serviço DPS (Data Protection Service)
+Set-Service -Name dps -StartupType Automatic
+Start-Service -Name dps
+
+# Ativar o serviço PCASvc (Program Compatibility Assistant Service)
+Set-Service -Name pcasvc -StartupType Automatic
+Start-Service -Name pcasvc
+
+# Ativar o serviço Diagnostics Tracking Service (diagtrack)
+Set-Service -Name diagtrack -StartupType Automatic
+Start-Service -Name diagtrack
+
+# Ativar o serviço SysMain (Superfetch)
+Set-Service -Name sysmain -StartupType Automatic
+Start-Service -Name sysmain
